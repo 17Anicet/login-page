@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Sen-Bold';
+    src: url('Sen-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Sen-ExtraBold';
+    src: url('Sen-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Sen-Regular';
+    src: url('Sen-Regular.ttf') format('truetype');
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: auto;
+    font-family: 'Sen-Regular';
+    font-size: 16px;
+    width: 100%;
+    color: black;
+    background-color: rgb(210, 208, 208);
+}
+/* ******************************** */
+section{
+    display: flex;
+    border: none;
+    width: fit-content;
+    margin: auto;
+    margin-top: 10%;
+    text-align: center; 
+}
+section aside{
+    padding: 65px;
+    box-shadow: 0px 0px 10px 0px  rgba(0, 0, 0, 0.486);
+    width: auto;
+}
+section .firstbloc{
+    width: 500px;
+    background-color: rgb(0, 3, 20);
+    color: rgb(255, 255, 255);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+section .secondbloc{
+    width: 300px;
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+/****/
+.secondbloc .matricule input{
+    background-color: rgb(210, 208, 208);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    outline: transparent;
+}
+.secondbloc .valider-matricule input{
+    background-color: rgb(0, 3, 20);
+    color: rgb(235, 235, 235);
+    border: none;
+    padding: 5px;
+    width: 190px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+/**************MEDIA QUERY*****************/
+@media all and (max-width:810px){
+    section .firstbloc{
+    width: 350px;
+}
+}
+@media all and (max-width:660px){
+    section .firstbloc{
+    width: 330px;
+}
+}
+@media all and (max-width:640px){
+    section{
+        display: block;
+    }
+    section .firstbloc{
+    width: 500px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: initial;
+}
+section .secondbloc{
+    width: 500px;
+    border-top-right-radius: initial;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+}
+@media all and (max-width:500px){
+    section{
+        display: block;
+    }
+    section .firstbloc{
+    width: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: initial;
+}
+section .secondbloc{
+    width: 300px;
+    border-top-right-radius: initial;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+section aside{
+    padding: 10px;
+}
+section{
+    margin-top: 30%;
+}
+}
